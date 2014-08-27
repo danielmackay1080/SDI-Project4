@@ -6,15 +6,17 @@
 // Sting Problem 1
 // Does a string follow a 123-456-7890 pattern like a phone number?
 
-var stringPhoneNum = '123-456-7890';
-var phonePattern = true;
 
-var stringFunction = function (string, phonePattern) {
-	var mySubstring = stringPhoneNum.substring(0,11)
-		if (stringPhoneNum === 11){
-		console.log('The answer is true');
-			}else{
-			console.log('The answer is false.');
-			}
+var stringFunction = function (string) {
+	var stringPhoneNum = '123-456-7890';
+	var mySubstring = stringPhoneNum.length
+		if (mySubstring === 11){
+		}
+		return true; 
 };
-stringFunction(stringPhoneNum, phonePattern);
+stringFunction(true);
+
+// Main Code
+// String Functions
+
+console.log(stringFunction);
