@@ -35,10 +35,10 @@ var stringUpper = function (string){
 // Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
 
 var decimalPlace = function (number, numOfDecim){
-	var numbers;
-	return numbers(number.toFixed(numOfDecim));
+	var numbers = number.toFixed(numOfDecim);
+	return numbers
 };
-numReturn = decimalPlace(45892, 3);
+numReturn = decimalPlace(458.92, 3);
 
 //Problem 3
 // Find the number of hours or days difference between two dates.
@@ -63,15 +63,20 @@ var numConvert = function (){
 returnNum = numConvert();
 
 // Array Functions
-// Problem 1
-// Find the smallest value in an array than is greater than a given number.
+// Problem 2
+// Find the total value of just the numbers in an array, even if some of the items are not numbers.
 
-var arrayFunction = function (array,number){
-	array.sort
-	
+var arrayFunction = function (array){
+	var number = 0
+		for (i = 0, i < myArray.length; i++){
+			parseInt (myArray[i]);
+			number =+ myArray[i];
+			};
+		return number;
 };
 
 // Main Code
+
 // String Functions
 
 console.log('The answer for string problem 1 is ' + stringReturn + '.');
@@ -85,8 +90,9 @@ console.log ('There are ' + dateReturn + 'left.');
 
 console.log(returnNum + 'is now a number, not a string');
 
-console.log('The new number is ' + numReturn + '.');
+console.log('The new number is ' + numReturn + );
 
+// Array Functions
 
-
+var myArray = [ 15, 20, 'dog', 10 , 'cat', 'games'];
 
