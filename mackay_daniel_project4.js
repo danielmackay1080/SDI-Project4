@@ -31,14 +31,33 @@ var stringUpper = function (string){
 };
 
 // Number Problems
-//Problem 4
+//Problem 3
 // Find the number of hours or days difference between two dates.
 
 var timeBetweenDates = function (date1, date2, hourString){
 	var dateDiff = date1.gethours() - date2.gethours();
 		return (dateDiff / 24 * 60 * 60 * 1000);
 };
-dateReturn = timeBetweenDates(2014 08 28, 2014 08 29, 'hours');
+dateReturn = timeBetweenDates('2014/08/28', '2014/08/29','hours');
+
+// Number Problem 4
+// Given a string version of a number such as "42", return the value as an actual Number, such as 42.
+
+var numConvert = function (){
+	var number = '42';
+	var numCon = Math.floor('42');
+		return numCon;
+};
+returnNum = numConvert();
+
+// Array Functions
+// Problem 1
+// Find the smallest value in an array than is greater than a given number.
+
+var arrayFunction = function (array,number){
+	array.sort
+	
+};
 
 // Main Code
 // String Functions
@@ -51,6 +70,8 @@ console.log(stringUpper('daniel mackay is a nice guy.'));
 var date1 = new Date (2014, 08, 28);
 var date2 = new Date (2014, 08, 29);
 console.log ('There are ' + dateReturn + 'left.');
+
+console.log(returnNum + 'is now a number, not a string');
 
 
 
