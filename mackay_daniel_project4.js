@@ -35,11 +35,10 @@ var stringUpper = function (string){
 // Find the number of hours or days difference between two dates.
 
 var timeBetweenDates = function (date1, date2, hourString){
-	var dateDiff = date1.gethours - date2.gethours : date2.gethours - date1.gethours;
-		return dateResult;
+	var dateDiff = date1.gethours() - date2.gethours();
+		return (dateDiff / 24 * 60 * 60 * 1000);
 };
-dateReturn = timeBetweenDates(2014 08 29, 2014 08 28, 'hours');
-
+dateReturn = timeBetweenDates(2014 08 28, 2014 08 29, 'hours');
 
 // Main Code
 // String Functions
@@ -49,9 +48,9 @@ console.log(stringUpper('daniel mackay is a nice guy.'));
 
 //Number Functions
 
-var date1 = new date (2014, 08, 28);
-var date2 = new date (2014, 08, 29);
-comcole.log ('There are ' + date.gethours + 'left.');
+var date1 = new Date (2014, 08, 28);
+var date2 = new Date (2014, 08, 29);
+console.log ('There are ' + dateReturn + 'left.');
 
 
 
