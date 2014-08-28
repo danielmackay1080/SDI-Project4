@@ -31,13 +31,14 @@ var stringUpper = function (string){
 };
 
 // Number Problems
-//Problem 1 
-// Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
+//Problem 4
+// Find the number of hours or days difference between two dates.
 
-var decimalPlace = function (number, decimal) {
-	return number(number.tofixed(decimal));
+var timeBetweenDates = function (date1, date2, hourString){
+	var dateDiff = date1.gethours - date2.gethours : date2.gethours - date1.gethours;
+		return dateResult;
 };
-
+dateReturn = timeBetweenDates(2014 08 29, 2014 08 28, 'hours');
 
 
 // Main Code
@@ -48,4 +49,10 @@ console.log(stringUpper('daniel mackay is a nice guy.'));
 
 //Number Functions
 
-console.log(decimalPlace(1.2345,2));
+var date1 = new date (2014, 08, 28);
+var date2 = new date (2014, 08, 29);
+comcole.log ('There are ' + date.gethours + 'left.');
+
+
+
+
