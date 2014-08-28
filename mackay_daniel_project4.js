@@ -31,14 +31,26 @@ var stringUpper = function (string){
 };
 
 // Number Problems
+// Problem 1
+// Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
+
+var decimalPlace = function (number, numOfDecim){
+	var numbers;
+	return numbers(number.toFixed(numOfDecim));
+};
+numReturn = decimalPlace(45892, 3);
+
 //Problem 3
 // Find the number of hours or days difference between two dates.
 
 var timeBetweenDates = function (date1, date2, hourString){
-	var dateDiff = date1.gethours() - date2.gethours();
+	var date1 = new Date (2014, 08, 28);
+	var date2 = new Date (2014, 08, 29);
+	var dateDiff = date1.getHours() - date2.getHours();
 		return (dateDiff / 24 * 60 * 60 * 1000);
 };
-dateReturn = timeBetweenDates('2014/08/28', '2014/08/29','hours');
+dateReturn = timeBetweenDates();
+
 
 // Number Problem 4
 // Given a string version of a number such as "42", return the value as an actual Number, such as 42.
@@ -72,6 +84,8 @@ var date2 = new Date (2014, 08, 29);
 console.log ('There are ' + dateReturn + 'left.');
 
 console.log(returnNum + 'is now a number, not a string');
+
+console.log('The new number is ' + numReturn + '.');
 
 
 
