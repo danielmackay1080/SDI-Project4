@@ -68,12 +68,15 @@ returnNum = numConvert();
 
 var arrayFunction = function (array){
 	var number = 0
-		for (i = 0, i < myArray.length; i++){
-			parseInt (myArray[i]);
-			number =+ myArray[i];
-			};
+	var myArray = [ 15, 20, 'dog', 10 , 'cat', 'games'];
+		for (var i = 0; i < myArray.length; i++) {
+  			if (!isNaN(parseInt(myArray[i]))) { 
+  					number += myArray[i]; 
+  			}
+};
 		return number;
 };
+returnArray = arrayFunction();
 
 // Main Code
 
@@ -90,9 +93,10 @@ console.log ('There are ' + dateReturn + 'left.');
 
 console.log(returnNum + 'is now a number, not a string');
 
-console.log('The new number is ' + numReturn + );
+console.log('The new number is ' + numReturn );
 
 // Array Functions
 
 var myArray = [ 15, 20, 'dog', 10 , 'cat', 'games'];
+console.log('The sum of the numbers are' + returnArray + '.');
 
